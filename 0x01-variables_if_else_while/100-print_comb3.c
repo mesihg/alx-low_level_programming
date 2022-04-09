@@ -16,6 +16,10 @@ for (n1 = n + 1; n1 < 10; n1++)
 putchar((n % 10) + '0');
 putchar((n1 % 10) + '0');
 
+if (n == 8 && n1 == 9)
+{
+continue;
+}
 
 putchar(',');
 putchar(' ');
