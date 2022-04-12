@@ -2,7 +2,7 @@
 
 /**
  * print_sign - prints sign of a number
- * @c: int n input to be compared
+ * @n: int n input to be compared
  * Return: always 0 (Success)
  */
 
