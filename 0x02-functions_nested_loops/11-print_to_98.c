@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * print_to_98 - prints all natural number from n to 98
  * @n: input integer n
@@ -30,4 +32,5 @@ printf(", ");
 }
 }
 prinft('\n');
+return (0);
 }
