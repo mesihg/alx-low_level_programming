@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-int i, n;
+int i;
 int num1 = 0, num2 = 1;
 int fib = num1 + num2;
 
