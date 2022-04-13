@@ -19,10 +19,10 @@ printf("%lu", num1);
 }
 else
 {
-printf("%lu, ", n1);
-fib = n1 + n2;
-n1 = n2;
-n2 = fib;
+printf("%lu, ", num1);
+fib = num1 + num2;
+num1 = num2;
+num2 = fib;
 }
 }
 printf("\n");
