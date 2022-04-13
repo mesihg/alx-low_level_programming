@@ -18,7 +18,7 @@ num1 = num2;
 num2 = fib;
 fib = num1 + num2;
 
-if (i < 49)
+if (i < 50)
 {
 printf(", ");
 }
