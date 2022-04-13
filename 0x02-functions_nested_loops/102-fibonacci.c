@@ -8,8 +8,7 @@
 int main(void)
 {
 int i;
-int num1 = 0, num2 = 1;
-int fib =  0;
+unsigned long num1 = 0, num2 = 1, fib = 0;
 
 for (i = 2; i < 50; i++)
 {
