@@ -8,22 +8,23 @@
 int main(void)
 {
 int i;
-unsigned long num1 = 0, num2 = 1, fib;
+long num1 = 1, num2 = 2, fib;
 
-for (i = 2; i < 50; i++)
+for (i = 0; i < 50; i++)
 {
-fib =  num1 + num2;
-printf("%lu", fib);
-num1 = num2;
-num2 = fib;
+
 if (i == 49)
 {
-printf("\n");
+printf("%lu", num1);
 }
 else
 {
-printf(", ");
+printf("%lu, ", n1);
+fib = n1 + n2;
+n1 = n2;
+n2 = fib;
 }
 }
+printf("\n");
 return (0);
 }
