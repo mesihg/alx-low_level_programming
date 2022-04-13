@@ -9,20 +9,22 @@ int main(void)
 {
 int i;
 int num1 = 0, num2 = 1;
-int fib =  num1 + num2;
+int fib =  0;
 
-for (i = 2; i <= 50; i++)
+for (i = 2; i < 50; i++)
 {
-printf("%d", fib);
+fib =  num1 + num2;
+printf("%lu", fib);
 num1 = num2;
 num2 = fib;
-fib = num1 + num2;
-
-if (i < 50)
+if (i == 49)
+{
+printf('\n');
+}
+else
 {
 printf(", ");
 }
 }
-putchar('\n');
 return (0);
 }
