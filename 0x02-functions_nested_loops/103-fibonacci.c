@@ -13,9 +13,10 @@ while (fib <= 4000000)
 fib = n1 + n2;
 n1 = n2;
 n2 = fib;
-
-if ((n % 2) == 0)
-	sum += n1;
+if (n1 % 2 == 0)
+{
+sum += n1;
+}
 }
 printf("%d\n", sum);
 return (0);
