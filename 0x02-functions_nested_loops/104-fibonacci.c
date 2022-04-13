@@ -12,11 +12,11 @@ for (i = 0; i < 98; i++)
 {
 if (i == 97)
 {
-printf("%d",n1); 
+printf("%d",n1);
 }
 else
 {
-printf("%d, ",n1);
+printf("%d, ", n1);
 fib = n1 + n2;
 n1 = n2;
 n2 = fib;
