@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-int i, n1 = 0, n2 = 1, fib;
+int i, n1 = 1, n2 = 2, fib;
 
 for (i = 0; i < 98; i++)
 {
