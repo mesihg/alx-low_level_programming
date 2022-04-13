@@ -18,7 +18,7 @@ num1 = num2;
 num2 = fib;
 if (i == 49)
 {
-printf('\n');
+printf("\n");
 }
 else
 {
