@@ -13,8 +13,7 @@ int fib =  num1 + num2;
 
 for (i = 2; i <= 50; i++)
 { 
-printf("%d", fib); 
-
+printf("%d", fib);
 num1 = num2;
 num2 = fib;
 fib = num1 + num2;
