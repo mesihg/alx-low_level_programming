@@ -17,7 +17,6 @@ printf("%d, ", fib);
 num1 = num2;
 num2 = fib;
 fib = num1 + num2;
-}	
-
+}
 return (0);
 }
