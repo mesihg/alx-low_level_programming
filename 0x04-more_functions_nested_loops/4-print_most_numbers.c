@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_most_numbers - print numbers from 0 to 9 except two and four
  * Return: Always 0 (Success)
@@ -15,5 +14,4 @@ _putchar(i + '0');
 }
 }
 _putchar('\n');
-return (0);
 }
