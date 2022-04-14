@@ -6,15 +6,20 @@
  */
 int main(void)
 {
-long int a = 612852475143; 
-long int x;
-for (x = 2; x < a; x++)
+int i = 2;
+long n = 612852475143;
+while (i < n)
 {
-if (a % x == 0)
+while (n % i == 0)
 {
-a = a/x;
+if (n == i)
+{
+break;
 }
+n /= i;
 }
-printf("%ld\n", x);
+i++;
+}
+printf("%lu\n", n);
 return (0);
 }
