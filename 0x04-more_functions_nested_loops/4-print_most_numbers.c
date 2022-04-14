@@ -3,7 +3,7 @@
  * print_most_numbers - print numbers from 0 to 9 except two and four
  * Return: Always 0 (Success)
  */
- void print_most_numbers(void)
+void print_most_numbers(void)
 {
 int i;
 for (i = 0; i < 10; i++)
