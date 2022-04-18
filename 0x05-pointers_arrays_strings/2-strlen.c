@@ -7,7 +7,7 @@
  * Return: returns the length of the given input
  */
 
-int _strlne(char *s)
+int _strlen(char *s)
 {
 int i;
 i = 0;
