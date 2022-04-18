@@ -9,11 +9,11 @@
 
 int _strlne(char *s)
 {
-int u;
-u = 0;
-while (s[u] != '\0')
+int i;
+i = 0;
+while (s[i] != '\0')
 {
-u++;
+i++;
 }
 return (u);
 }
