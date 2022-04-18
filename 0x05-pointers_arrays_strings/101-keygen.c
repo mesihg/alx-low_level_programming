@@ -10,12 +10,20 @@
  */
 int main(void)
 {
+  
 int num;
+int count;
+int total;
 
 srand(time(0));
-num = rand();
-printf("%i\n", num);
+for (count = 0, total = 2772; total > 122; count++)
+{
+num = (rand() % 125) + 1;
+printf("%c", num);
+total -= num;
+}
+printf("%c", total);
 
 return (0);
-
+  
 }
