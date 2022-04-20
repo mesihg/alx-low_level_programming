@@ -10,22 +10,22 @@
 
 char *_strcat(char *dest, char *src)
 {
-if ((dest == NULL) && (src == NULL))
+int i, j;
+
+i = 0;
+while (dest[i] != '\0')
 {
-return NULL;
-}
-char *str = dest;
-while (*str != '\0')
-{
-str++;
+i++;
 }
 
-while (*src !='\0')
+j = 0;
+while (src[j] != '\0')
 {
-*str++ = *src++;
+dest[i] = src[j];
+j++;
+i++;
 }
-*str = '\0';
+dest[i] = '\0';
 
-return dest;
-
+return (dest);
 }
