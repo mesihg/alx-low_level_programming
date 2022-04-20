@@ -2,8 +2,10 @@
 
 /**
  * _strcat - concatenates two strings
+ * @dest: a pointer for char dest
+ * @src: a pointer for char src
  *
- * Return: nothing is returned
+ * Return: combined/concatenated string
  */
 
 char *_strcat(char *dest, char *src)
@@ -21,5 +23,5 @@ while (*src != '\0')
 *str++ = *src++;
 }
 *str = '\0';
-return dest;
+return desti;
 }
