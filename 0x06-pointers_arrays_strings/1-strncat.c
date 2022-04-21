@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates two strings at most n times
- * @dest: a pointer for input char dest
- * @src: a pointer for input char src
- * @n: input how many bytes from src to be concatenated
+ * _strncat - concatenates two strings
+ * @dest : destination string
+ * @src : source string
+ * @n : index of last char
  *
- * Return: @dest
+ * Return: dest
  */
 
 char *_strncat(char *dest, char *src, int n)
