@@ -9,20 +9,18 @@
 
 char *leet(char *str)
 {
+
 int i, j;
-char leetStr[] = "aAeEoOtTlL";
-char leetNum[] = "43071";
+char st[] = "aAeEoOtTlL";
+char num[] = "43071";
 
 for (i = 0; str[i] != '\0'; i++)
 {
-for (j = 0; leetStr[j] != '\0'; j++)
+for (j = 0; j < 5; j++)
 {
-if (str[i] == leetStr[j]
-{
-str[i] = leetNum[j / 2];
+if (str[i] == st[j])
+str[i] = num[j];
 }
-}
-
 }
 	
 return (str);
