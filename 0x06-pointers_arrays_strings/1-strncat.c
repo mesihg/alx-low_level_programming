@@ -6,24 +6,25 @@
  * @src: a pointer for input char src
  * @n: input how many bytes from src to be concatenated
  *
- * Return: dest
+ * Return: @dest
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
-int i, j;
+	int count = 0, count2 = 0;
 
-i = 0;
-while (dest[i])
-{
-i++;
-}
+	while (*(dest + count) != '\0')
+	{
+		count++;
+	}
 
-for (j = 0; j < n && src[j] != '\0'; j++)
-{
-dest[i + j] = src[j];
-}
-dest[i + j] = '\0';
-
-return (dest);
+	while (count2 < n)
+	{
+		*(dest + count) = *(src + count2);
+		if (*(src + count2) == '\0')
+			break;
+		count++;
+		count2++;
+	}
+	return (dest);
 }
