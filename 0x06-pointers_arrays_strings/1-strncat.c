@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strncat - concatenates two strings at most n times
+ * _strncat - concatenates two strings at most n times
  * @dest: a pointer for input char dest
  * @src: a pointer for input char src
  * @n: input how many bytes from src to be concatenated
