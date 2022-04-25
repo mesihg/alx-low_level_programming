@@ -18,8 +18,8 @@ if (*s == c)
 {
 return (s);
 }
-else 
+else
 {
-return NULL;
+return (NULL);
 }
 }
