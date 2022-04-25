@@ -10,16 +10,21 @@
 
 char *_strchr(char *s, char c)
 {
-while (*s != c && *s != '\0')
+unsigned int i;
+
+for (i = 0; s[i] != '\0'; i++)
 {
-s++;
+if (s[i] == c)
+{
+break;
 }
-if (*s == c)
-{
-return (s);
 }
-else
+if (s[i] == c)
 {
-return (NULL);
+ return (s);
+}
+else 
+{
+return ('\0');
 }
 }
