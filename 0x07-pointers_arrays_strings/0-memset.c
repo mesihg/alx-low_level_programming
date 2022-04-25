@@ -4,6 +4,8 @@
  * @s: a pointer to the string
  * @b: a value to be filled
  * @n: number of bytes to be filled starting from s
+ *
+ * Return: returns value of @s
  */
 
 char *_memset(char *s, char b, unsigned int n)
