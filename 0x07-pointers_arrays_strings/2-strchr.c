@@ -19,12 +19,6 @@ if (s[i] == c)
 break;
 }
 }
-if (s[i] == c)
-{
-return (s);
-}
-else
-{
-return ('\0');
-}
+
+return (s[i] == c ? (s + i) : '\0');
 }
