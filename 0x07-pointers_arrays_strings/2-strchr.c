@@ -21,9 +21,9 @@ break;
 }
 if (s[i] == c)
 {
- return (s);
+return (s);
 }
-else 
+else
 {
 return ('\0');
 }
