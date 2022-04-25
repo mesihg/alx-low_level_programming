@@ -1,15 +1,15 @@
 #include "main.h"
 /**
  * _memset - fill memory with a constant byte
- * @s: a pointer input
- * @b: a replacement char for @s
- * @n: indicates how many size of bytes to replace in @s with @b
+ * @s: a pointer to the string
+ * @b: a value to be filled
+ * @n: number of bytes to be filled starting from s
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
 int i;
-unsigned char *a = b;
+unsigned char *a = s;
 
 i = 0;
 
