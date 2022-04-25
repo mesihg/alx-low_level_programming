@@ -19,5 +19,5 @@ sum1 += a[j];
 sum2 += a[i];
 }
 printf("%d, %d\n", sum1, sum2);
-return (0);
+
 }
