@@ -12,9 +12,9 @@ int is_prime(int n, int i)
 {
 if (i < n)
 {
-if (n % x == 0)
+if (n % i == 0)
 	return (0);
-return (is_prime(n, x + 1));
+return (is_prime(n, i + 1));
 }
 return (1);
 }
