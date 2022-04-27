@@ -9,7 +9,7 @@ return (1);
 }
 else if (s[l] == s[e])
 {
-return (is_palindrome(s, l + 1, e - 1));
+return (is_palindrome_helper(s, l + 1, e - 1));
 }
 return (0);
 }
