@@ -1,6 +1,25 @@
 #include "main.h"
 
 /**
+ * is_prime - helper function
+ * @n: input number one
+ * @i: input number two
+ *
+ * Return: return a prime number
+ */
+
+int is_prime(int n, int i)
+{
+if (i < n)
+{
+if (n % x == 0)
+	return (0);
+return (is_prime(n, x + 1));
+}
+return (1);
+}
+
+/**
  * is_prime_number - check if a number is prime or not
  * @n: input number
  *
@@ -9,12 +28,7 @@
 
 int is_prime_number(int n)
 {
-int i;
-
-for (i = 2; i < n; i++)
-{
-if (n % i == 0)
+if (n <= 1)
 	return (0);
-}
-return (1);
+return (is_prime(n,2));
 }
