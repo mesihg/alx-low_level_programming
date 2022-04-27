@@ -33,6 +33,6 @@ int is_palindrome(char *s)
 {
 int l, e;
 l = 0;
-e = strlen(s);
+e = strlen(s) - 1;
 return (is_palindrome_helper(s, l, e));
 }
