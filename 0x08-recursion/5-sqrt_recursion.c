@@ -7,10 +7,6 @@
  * Return: return square root of a natural number
  */
 
-int _sqrt_recursion(int n)
-{
-return (_sqrt_recursion_helper(n, 1));
-}
 
 /**
  * _sqrt_recursion_helper - computes the real work of _sqrt_recursion
@@ -29,4 +25,9 @@ else if (i * i > n)
 else if (i * i == n)
 	return (i);
 return (_sqrt_recursion_helper(n, i + 1));
+}
+
+int _sqrt_recursion(int n)
+{
+return (_sqrt_recursion_helper(n, 1));
 }
