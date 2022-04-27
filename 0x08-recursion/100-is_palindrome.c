@@ -1,6 +1,14 @@
 #include "main.h"
 #include <string.h>
 
+/**
+ * is_palindrome_helper - helper function
+ * @s: a pointer for input string
+ * @l: input number one
+ * @e: input number two
+ *
+ * Return: return 1 if a palindrome otherwise 0
+ */
 int is_palindrome_helper(char *s, int l, int e)
 {
 if (l > e)
