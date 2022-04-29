@@ -31,35 +31,37 @@ return (1);
 
 int main(int argc, char *argv[])
 {
-  int n, i, cns, d, cents;
-  n = 0, i = 0, cns = 0;
-  int coins[5] = {25, 10, 5, 2, 1};
- if (argc > 1)
- {
-  if (isNumber(argv[1]))
-  {
-   n = 1;
-   cents = atoi(argv[1]);
-   if (cents >= 0)
-   {
-    while (cents != 0)
-    {
-    d = cents/coins[i];
-    if ( d == 0)
-      i++;
-    else
-    {
-     cns += d;
-      cents -= (d * coins[i]);
-    }
-    }
-   }
-  }
- }
+int n, i, cns, d, cents;
+n = 0, i = 0, cns = 0;
+int coins[5] = {25, 10, 5, 2, 1};
+if (argc > 1)
+{
+if (isNumber(argv[1]))
+{
+n = 1;
+cents = atoi(argv[1]);
+if (cents >= 0)
+{
+while (cents != 0)
+{
+d = cents/coins[i];
+if ( d == 0)
+{
+i++;
+}
+else
+{
+cns += d;
+cents -= (d * coins[i]);
+}
+}
+}
+}
+}
   
-  if (n == 0)
+if (n == 0)
     printf("%i\n", cns);
-  else
+else
     printf("%s\n", "Error");
-  return (n);
+return (n);
 }
