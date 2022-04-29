@@ -16,33 +16,31 @@ int i, n, err, result;
 
 result = 0;
 n = 0;
-err = 0;
-if (argc >= 3)
+if (argc > 1)
 {
 for (i = 1; i < argc; i++)
 {
-if (!isdigit(argv[i]))
-{
-err = 1;
-}
-else
+if (isdigit(argv[i]))
 {
 result += atoi(argv[i]);
 }
-
-}
-if (err == 1)
+else
 {
 n = 1;
-printf("%s\n", "Error");
-}
-printf("%i\n", result);
+break;
 }
 
-else if (argc == 1)
+}
+
+}
+
+else if (n == 0)
 {
-result = 0;
 printf("%i\n", result);
+}
+else
+{
+printf("%s\n", "Error");
 }
 return (n);
 }
