@@ -44,24 +44,23 @@ if (cents >= 0)
 {
 while (cents != 0)
 {
-d = cents/coins[i];
-if ( d == 0)
+d = cents / coins[i];
+if (d == 0)
 {
 i++;
 }
 else
 {
 cns += d;
-cents -= (d * coins[i]);
+cents -= (d *coins[i]);
 }
 }
 }
 }
-}
-  
+}  
 if (n == 0)
-    printf("%i\n", cns);
+	printf("%i\n", cns); 
 else
-    printf("%s\n", "Error");
+	printf("%s\n", "Error");
 return (n);
 }
