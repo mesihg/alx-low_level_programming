@@ -39,7 +39,6 @@ printf("%s\n", "Error");
 printf("%i\n", result);
 }
 
-
 else if (argc == 1)
 {
 result = 0;
