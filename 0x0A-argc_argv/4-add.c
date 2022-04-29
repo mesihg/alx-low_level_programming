@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- * main - entry point 
+ * main - entry point
  * @argc: number of arguments
  * @argv: array of pointers
  *
@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-int i, n , err, result;
+int i, n, err, result;
 
 result = 0;
 n = 0;
