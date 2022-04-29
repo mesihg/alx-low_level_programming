@@ -21,7 +21,7 @@ if (argc >= 3)
 {
 for (i = 1; i < argc; i++)
 {
-if (!isdigit(argv[i])
+if (!isdigit(argv[i]))
 {
 err = 1;
 }
@@ -43,7 +43,7 @@ printf("%i\n", result);
 else if (argc == 1)
 {
 result = 0;
-printf("%i\n" result);
+printf("%i\n", result);
 }
 return (n);
 }
