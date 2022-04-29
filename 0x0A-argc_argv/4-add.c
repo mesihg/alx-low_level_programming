@@ -16,7 +16,7 @@ int i;
 i = strlen(s);
 while (i--)
 {
-if (s[i] > 47 && s[i] < 58)
+if (s[i] >= '0' && s[i] <= '9')
 	continue;
 return (0);
 }
