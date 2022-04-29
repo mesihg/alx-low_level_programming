@@ -12,7 +12,7 @@
 
 int main(int argc, char *argv[])
 {
-int i, n, err, result;
+int i, n, result;
 
 result = 0;
 n = 0;
