@@ -16,7 +16,7 @@ int i;
 i = strlen(s);
 while (i--)
 {
-if(s[i] > 47 && s[i] < 58)
+if (s[i] > 47 && s[i] < 58)
 	continue;
 return (0);
 }
@@ -50,7 +50,6 @@ else
 if (n == 0)
 	printf("%i\n", result);
 else
-        printf("%s\n", "Error");
-
+	printf("%s\n", "Error");
 return (n);
 }
