@@ -57,9 +57,9 @@ cents -= (d *coins[i]);
 }
 }
 }
-}  
+} 
 if (n == 0)
-	printf("%i\n", cns); 
+	printf("%i\n", cns);
 else
 	printf("%s\n", "Error");
 return (n);
