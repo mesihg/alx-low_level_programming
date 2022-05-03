@@ -24,6 +24,6 @@ if (arr != NULL)
 		arr[i] = c;
 
 }
-
+free(arr);
 return (arr);
 }
