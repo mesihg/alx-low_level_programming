@@ -17,5 +17,11 @@ char *st = NULL;
 st = malloc(strlen(s1) + strlen(s2) + 1);
 if (st == NULL)
 	return (NULL);
-return (strcat(s1, s2));
+if (st != NULL)
+{
+char *p = result;
+while (*s1) *p++ = *s1++;
+while ((*p++ = *s2++));
+}
+return (st);
 }
