@@ -4,7 +4,7 @@
 /**
  * argstostr - concatenates all arguments
  * @ac: number of arguments
- * @av: a pointer input 
+ * @av: a pointer input
  *
  * Return: concatenated string
  */
