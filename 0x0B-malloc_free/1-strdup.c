@@ -19,5 +19,6 @@ if (str == NULL)
 st = malloc(strlen(str) + 1);
 if (st != NULL)
 	strcpy(st, str);
+free(st);
 return (st);
 }
