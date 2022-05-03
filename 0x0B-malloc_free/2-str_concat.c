@@ -14,14 +14,14 @@
 char *str_concat(char *s1, char *s2)
 {
 char *st = NULL;
-st = malloc(strlen(s1) + strlen(s2) + 1);
+st = malloc((strlen(s1) + strlen(s2) + 1) * sizeof(char));
 if (st == NULL)
 	return (NULL);
 if (st != NULL)
 {
-char *p = result;
-while (*s1) *p++ = *s1++;
-while ((*p++ = *s2++));
+st[0] = 0;
+strcat(st, s1);
+strcat(st, s2);
 }
 return (st);
 }
