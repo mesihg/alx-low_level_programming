@@ -9,7 +9,7 @@
  * Return: concatenated string
  */
 
-char *argstostr(int ac, int **av)
+char *argstostr(int ac, char **av)
 {
 if (ac == 0 || av == NULL)
 	return (NULL);
