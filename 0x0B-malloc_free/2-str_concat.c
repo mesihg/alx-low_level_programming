@@ -27,5 +27,6 @@ st[0] = 0;
 strcat(st, s1);
 strcat(st, s2);
 }
+free(st);
 return (st);
 }
