@@ -16,12 +16,23 @@ if (width <= 0 || height <= 0)
 	return (NULL);
 int **ptr;
 int i, j;
-ptr = malloc((width * height) * sizeof(int));
+ptr = malloc(height * sizeof(int *));
+if (ptr == NULL)
+	return (NULL);
+
+for (i = 0; i < height; i++)
+{
+ptr[i] = malloc(sizeof(int) * width);
+if (ptr[i] == NULL)
+	for (i = i - 1; i >= 0; i--)
+		free(ptr[i]);
+free(ptr);
+return (NULL);
+}
 for (i = 0; i < height; i++)
 {
 for (j = 0; j < width; j++)
 	ptr[i][j] = 0;
 }
-free(ptr);
 return (ptr);
 }
