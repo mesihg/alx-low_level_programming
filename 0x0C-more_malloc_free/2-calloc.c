@@ -16,7 +16,7 @@ unsigned int i;
 
 ptr = malloc(nmemb * size);
 
-if (nmemb == 0 || size == 0 || ptr == NULL) 
+if (nmemb == 0 || size == 0 || ptr == NULL)
 	return (NULL);
 for (i = 0; i < (nmemb * size); i++)
 	ptr[i] = 0;
