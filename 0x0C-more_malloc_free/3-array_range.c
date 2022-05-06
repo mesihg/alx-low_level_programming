@@ -8,21 +8,24 @@
  *
  * Return: return pointer of arrays
  */
+
 int *array_range(int min, int max)
 {
-int *ptr;
-unsigned int i;
+	int *ptr;
+	int i, size;
 
-if (min > max)
-	return (NULL);
-ptr = malloc((max - min + 1) * sizeof(int));
+	if (min > max)
+		return (NULL);
 
-if (ptr == NULL)
-	return (NULL);
+	size = max - min + 1;
 
-for (i = 0; i < (max - min + 1); i++)
-	ptr[i] = min++;
+	ptr = malloc(sizeof(int) * size);
 
-free(ptr);
-return (ptr);
+	if (ptr == NULL)
+		return (NULL);
+
+	for (i = 0; i < size; i++)
+		ptr[i] = min++;
+
+	return (ptr);
 }
