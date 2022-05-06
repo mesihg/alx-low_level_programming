@@ -23,5 +23,6 @@ if (ptr == NULL)
 for (i = 0; i < (max - min + 1); i++)
 	ptr[i] = min++;
 
+free(ptr);
 return (ptr);
 }
