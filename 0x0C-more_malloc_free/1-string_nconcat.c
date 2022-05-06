@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * string_nconcat - concatenates two strings
@@ -47,6 +48,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		ptr[i] = s2[i - sz1];
 	}
 	ptr[i] = '\0';
-
+free(ptr);
 return (ptr);
 }
