@@ -2,6 +2,14 @@
 #include <stdlib.h>
 
 
+/**
+ * main - entry point
+ * @argc: number of arguments
+ * @argv: a pointer for input arguments
+ *
+ * Return: returns multiplied value of the given arguments
+ */
+
 int  main(int argc, char **argv)
 {
     unsigned long mul;
