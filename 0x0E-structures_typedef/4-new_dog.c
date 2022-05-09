@@ -22,14 +22,14 @@ ptr = malloc(sizeof(dog_t));
 if (ptr == NULL)
 	return (NULL);
 
-ptr->name = malloc(sizeof(char) * len_name + 1);
+ptr->name = malloc(sizeof(char) * len_name);
 if (ptr->name == NULL)
 {
 free(ptr);
 return (NULL);
 }
 ptr->name = strcpy(ptr->name, name);
-ptr->owner = malloc(sizeof(char) * len_owner + 1);
+ptr->owner = malloc(sizeof(char) * len_owner);
 if (ptr->owner == NULL)
 {
 free(ptr);
