@@ -17,21 +17,12 @@ ptr = malloc(sizeof(dog_t));
 
 if (ptr == NULL)
 	return (NULL);
-if (name == NULL)
+if (owner == NULL || name == NULL)
 {
-free(ptr);
-free(owner);
-return (NULL);
-}
-if (owner == NULL)
-{
-free(ptr);
-free(name);
 return (NULL);
 }
 ptr->name = name;
 ptr->age = age;
 ptr->owner = owner;
-
 return (ptr);
 }
