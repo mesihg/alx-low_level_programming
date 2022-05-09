@@ -21,7 +21,6 @@ while (name != '\0')
 	len_name++;
 while (owner != '\0')
 	len_owner++;
-	
 ptr = malloc(sizeof(dog_t));
 ptr->name = malloc(len_name * sizeof(char));
 ptr->owner = malloc(len_owner * sizeof(char));
