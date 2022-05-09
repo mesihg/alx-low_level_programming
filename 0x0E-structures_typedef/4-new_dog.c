@@ -28,8 +28,8 @@ if (ptr->name == NULL)
 free(ptr);
 return (NULL);
 }
-for (i = 0; i < len_name; i++)
-	ptr->name[i] = name[i];
+	
+ptr->name = strcpy(ptr->name, name);
 	
 ptr->owner = malloc(sizeof(char) * len_owner + 1);
 
@@ -40,8 +40,7 @@ free(ptr->name);
 return (NULL);
 }
 
-for (i = 0; i < len_owner; i++)
-	ptr->owner[i] = owner[i];
+ptr->owner = strcpy(ptr->owner, owner);
 ptr->age = age;
 return (ptr);
 }
