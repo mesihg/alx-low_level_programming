@@ -19,10 +19,10 @@ len_name = strlen(name);
 len_owner = strlen(owner);
 
 ptr = malloc(sizeof(dog_t));
-ptr->name = malloc(sizeof(char) * len_name + 1);
-ptr->owner = malloc(sizeof(char) * len_owner + 1);
 if (ptr == NULL)
 	return (NULL);
+
+ptr->name = malloc(sizeof(char) * len_name + 1);
 if (ptr->name == NULL)
 {
 free(ptr);
@@ -30,6 +30,8 @@ return (NULL);
 }
 for (i = 0; i < len_name; i++)
 	ptr->name[i] = name[i];
+	
+ptr->owner = malloc(sizeof(char) * len_owner + 1);
 
 if (ptr->owner == NULL)
 {
