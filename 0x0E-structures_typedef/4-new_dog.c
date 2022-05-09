@@ -28,11 +28,8 @@ if (ptr->name == NULL)
 free(ptr);
 return (NULL);
 }
-	
 ptr->name = strcpy(ptr->name, name);
-	
 ptr->owner = malloc(sizeof(char) * len_owner + 1);
-
 if (ptr->owner == NULL)
 {
 free(ptr);
