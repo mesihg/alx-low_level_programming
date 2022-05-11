@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * get_op_func - selects the correct function to perform the operation asked by the user
+ * get_op_func - selects the correct function to perform the operation
  * @s: pointer for the operator
- * Return: returns a pointer to the function that corresponds to the operator given as a parameter
+ * Return: returns a pointer to the operator given as a parameter
  */
 
 int (*get_op_func(char *s))(int, int)
