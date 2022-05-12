@@ -13,6 +13,9 @@ int i, sum;
 va_list ns;
 
 sum = 0;
+
+if (n == 0)
+	return (0);
 va_start(ns, n);
 
 for (i = n; i >= 0; i = va_arg(ns, int))
