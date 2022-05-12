@@ -35,23 +35,23 @@ case 'i':
         printf("%d", va_arg(list, int));
         k = 1;
         break;
-        case 'f':
-            printf("%f", va_arg(list, double));
-            k = 1;
-            break;
-        case 's':
-            str = va_arg(list, char *);
-            k = 1;
-            if (str == NULL)
-            {
-                printf("(nil)");
-                break;
-            }
-            printf("%s", str);
-            break;
+case 'f':
+        printf("%f", va_arg(list, double));
+        k = 1;
+        break;
+case 's':
+        str = va_arg(list, char *);
+        k = 1;
+        if (str == NULL)
+        {
+        printf("(nil)");
+        break;
         }
-        i++;
-    }
-    printf("\n");
-    va_end(valist);
+        printf("%s", str);
+        break;
+}
+i++;
+}
+printf("\n");
+va_end(valist);
 }
