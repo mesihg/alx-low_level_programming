@@ -2,61 +2,49 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-
-
 /**
- * print_c - print a char
- * @c: char to print
- *
- * Return: void
+ * print_c - prints a character
+ * @c: char input
  */
 void print_c(va_list c)
 {
-	printf("%c", va_arg(c, int));
+printf("%c", va_arg(c, int));
 }
 
 /**
  * print_s - prints a string
- * @s: string to print
- *
- * Return: void
+ * @s: string input
  */
 void print_s(va_list s)
 {
-	char *str = va_arg(s, char *);
+char *str = va_arg(s, char *);
 
-	if (str == NULL)
-		str = "(nil)";
-	printf("%s", str);
+if (str == NULL)
+	str = "(nil)";
+printf("%s", str);
 }
 
 /**
- * print_i - prints an int
- * @i: int to print
- *
- * Return: void
+ * print_i - prints an integer
+ * @i: int input
  */
 void print_i(va_list i)
 {
-	printf("%d", va_arg(i, int));
+printf("%d", va_arg(i, int));
 }
 
 /**
  * print_f - prints a float
- * @f: float to print
- *
- * Return: void
+ * @f: float input
  */
 void print_f(va_list f)
 {
-	printf("%f", va_arg(f, double));
+printf("%f", va_arg(f, double));
 }
 
 /**
  * print_all - prints anything
- * @format: list of argument types passed to the function
- *
- * Return: void
+ * @format: list of argument types
  */
 void print_all(const char * const format, ...)
 {
