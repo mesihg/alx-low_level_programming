@@ -21,10 +21,13 @@ for (i = 0; i < n; i++)
 st = va_arg(strs, char *);
 
 if (st != NULL)
-       printf("%s", st);
+{
+	printf("%s", st);
+}
 else
+{
 	printf("(nil)");
-
+}
 if (i != (n - 1) && separator != NULL)
 	printf("%s", separator);
 }
