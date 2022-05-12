@@ -8,26 +8,25 @@
  */
 void print_all(const char *const format, ...)
 {
-    va_list list;
-    unsigned int i = 0, j, k = 0;
-    char *str;
-    const char op_arg[] = "cifs";
-    va_start(list, format);
-    while (format && format[i])
-    {
-        j = 0;
-        while (op_arg[j])
-        {
-            if (format[i] == op_arg[j] & k)
-            {
-                printf(", ");
-                break;
-            }
-            j++;
-        }
-
-        switch (format[i])
-        {
+va_list list;
+unsigned int i = 0, j, k = 0;
+char *str;
+const char op_arg[] = "cifs";
+va_start(list, format);
+while (format && format[i])
+{
+j = 0;
+while (op_arg[j])
+{
+if (format[i] == op_arg[j] & k)
+{
+printf(", ");
+break;
+}
+j++;
+}
+switch (format[i])
+{
         case 'c':
             printf("%c", va_arg(list, int));
             k = 1;
