@@ -28,27 +28,27 @@ j++;
 switch (format[i])
 {
 case 'c':
-        printf("%c", va_arg(list, int));
-        k = 1;
-        break;
+    printf("%c", va_arg(list, int));
+    k = 1;
+    break;
 case 'i':
-        printf("%d", va_arg(list, int));
-        k = 1;
-        break;
+    printf("%d", va_arg(list, int));
+    k = 1;
+    break;
 case 'f':
-        printf("%f", va_arg(list, double));
-        k = 1;
-        break;
+    printf("%f", va_arg(list, double));
+    k = 1;
+    break;
 case 's':
-        str = va_arg(list, char *);
-        k = 1;
-        if (str == NULL)
-        {
-        printf("(nil)");
-        break;
-        }
-        printf("%s", str);
-        break;
+    str = va_arg(list, char *);
+    k = 1;
+    if (str == NULL)
+    {
+    printf("(nil)");
+    break;
+    }
+    printf("%s", str);
+    break;
 }
 i++;
 }
