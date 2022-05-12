@@ -27,14 +27,14 @@ j++;
 }
 switch (format[i])
 {
-        case 'c':
-            printf("%c", va_arg(list, int));
-            k = 1;
-            break;
-        case 'i':
-            printf("%d", va_arg(list, int));
-            k = 1;
-            break;
+case 'c':
+        printf("%c", va_arg(list, int));
+        k = 1;
+        break;
+case 'i':
+        printf("%d", va_arg(list, int));
+        k = 1;
+        break;
         case 'f':
             printf("%f", va_arg(list, double));
             k = 1;
