@@ -21,8 +21,8 @@ if (ptr->str != NULL)
 	printf("[%d] %s\n", h->len, h->str);
 else
 	printf("[%d] %s\n", 0, "(nil)");
-count++;
 ptr = ptr->next;
+count++;
 }
 return (count);
 }
