@@ -15,10 +15,10 @@ size_t count = 0;
 
 while (h != NULL)
 {
-if (h->str != NULL)
-	printf("[%u] %s\n", h->len, h->str);
+if (h->str == NULL)
+	printf("[0] %s\n", "(nil)");
 else
-	printf("[%u] %s\n", 0, "(nil)");
+	printf("[%u] %s\n", h->len, h->str);
 h = h->next;
 count++;
 }
