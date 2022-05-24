@@ -15,13 +15,10 @@ new_node = (listint_t *)malloc(sizeof(listint_t));
 if (new_node == NULL)
 	return (NULL);
 new_node->n = n;
-if (*head == NULL)
-	*head = new_node;
-else
-{
-new_node->next = *head;
+new_node->next = NULL;
+
+if (*head != NULL)
+	new_node->next = *head;
 *head = new_node;
-}
-free(new_node);
-return (*head);
+return (new_node);
 }
