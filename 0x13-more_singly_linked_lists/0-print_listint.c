@@ -14,7 +14,7 @@ size_t length = 0;
 const listint_t *ptr = h;
 while (ptr != NULL)
 {
-printf("%lu\n", ptr->n);
+printf("%d\n", ptr->n);
 ptr = ptr->next;
 length++;
 }
