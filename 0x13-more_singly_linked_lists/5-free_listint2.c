@@ -2,7 +2,7 @@
 
 /**
  * free_listint2 - frees a listint_t list
- * *head: pointer to head
+ * @head: pointer to head
  *
  * Return: nothing is returned
  */
