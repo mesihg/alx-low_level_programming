@@ -14,8 +14,8 @@ if (head == NULL)
 	return (0);
 while (head != NULL)
 {
-head = head->next;
 sum += head->n;
+head = head->next;
 }
 return (sum);
 }
