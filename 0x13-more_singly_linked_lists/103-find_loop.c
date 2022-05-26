@@ -10,19 +10,26 @@
 listint_t *find_listint_loop(listint_t *head)
 {
 listint_t *fast, *slow;
-fast = head->next;
+fast = head;
 slow = head;
 if (head != NULL)
 	return (NULL);
 
 while (fast != NULL && fast->next != NULL && slow != NULL)
 	{
+		fast = fast->next->next;
+		slow = slow->next;
+
 		if (slow == fast)
 		{
-			return (slow);
+			slow = head;
+			while (slow != fast)
+			{
+				slow = slow->next;
+				fast = fast->next;
+			}
+			return (fast);
 		}
-		fast = fasst->next->next;
-		slow = slow->next;
 
 	}
 return (NULL);
