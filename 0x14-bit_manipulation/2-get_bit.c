@@ -14,5 +14,7 @@ int value;
 
 if (index > 63)
 	return (-1);
-return ((n >> index) & 1);
+value = (n >> index) & 1;
+
+return (value);
 }
