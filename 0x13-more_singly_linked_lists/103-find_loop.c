@@ -9,9 +9,9 @@
 
 listint_t *find_listint_loop(listint_t *head)
 {
-listint_t *fast, *slow;
-fast = head;
-slow = head;
+listint_t *fast = head;
+listint_t *slow = head;
+
 if (head != NULL)
 	return (NULL);
 
