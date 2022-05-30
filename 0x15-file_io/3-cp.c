@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
 	while (nchar_read == 1024)
 	{
 		nchar_read = read(file_from, buff, 1024);
-		if (nchars == -1)
+		if (nchar_read == -1)
 			display_error_message(-1, 0, argv);
 		nw_fd = write(file_to, buff, nchar_read);
 		if (nw_fd == -1)
