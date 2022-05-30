@@ -28,7 +28,7 @@ if (r_fd == -1)
 {
 return (0);
 }
-w_fd = write(STDOUT_FILENO, &buf, r_fd); 
+w_fd = write(STDOUT_FILENO, &buf, r_fd);
 close(fd);
 return (w_fd);
 }
