@@ -18,7 +18,6 @@ void display_error_message(int file_from, int file_to, char *arg[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", arg[1]);
 		exit(98);
 	}
-	
 	if (file_to == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", arg[2]);
@@ -49,7 +48,6 @@ int main(int argc, char *argv[])
 	file_from = open(argv[1], O_RDONLY);
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
         display_error_message(file_from, file_to, argv);
-	
 	nchar_read = 1024;
 	while (nchar_read == 1024)
 	{
