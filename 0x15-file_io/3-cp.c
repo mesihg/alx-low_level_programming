@@ -18,12 +18,12 @@ void display_error_message(int file_from, int file_to, char *arg[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", arg[1]);
 		exit(98);
 	}
-	if (file_to == -1)
-        {
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", arg[2]);
-		exit(99);
-        }
 	
+	if (file_to == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", arg[2]);
+		exit(98);
+	}
 }
 
 
