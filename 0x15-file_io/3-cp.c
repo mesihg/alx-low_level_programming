@@ -6,7 +6,7 @@
  * display_error_message - prints error message to the stderr screen
  * @file_from: input file fd one
  * @file_to: input file fd two
- * @arg: list of arguments
+ * @argv: list of arguments
  *
  * Return: nothing is returned
  */
