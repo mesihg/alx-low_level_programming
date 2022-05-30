@@ -22,7 +22,7 @@ if (fd == -1)
 {
 return (0);
 }
-buf = malloc(letters);
+buf = malloc(sizeof(char) * (letters));
 if (buff == NULL)
 {
 return (0);
