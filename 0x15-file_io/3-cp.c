@@ -36,6 +36,7 @@ void display_error_message(int file_from, int file_to, char *arg[])
 
 int main(int argc, char *argv[])
 {
+	
         int file_from, file_to, err_fd;
 	ssize_t nchar_read, nw_fd;
 	char buff[1024];
