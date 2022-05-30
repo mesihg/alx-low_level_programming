@@ -47,19 +47,19 @@ int main(int argc, char *argv[])
 
 	file_from = open(argv[1], O_RDONLY);
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-	
-        display_error_message(file_from, file_to, argv);
+	display_error_message(file_from, file_to, argv);
+
 	nchar_read = 1024;
 	while (nchar_read == 1024)
 	{
 		nchar_read = read(file_from, buff, 1024);
-		if (nchar_read == -1)
+		if (nchars == -1)
 			display_error_message(-1, 0, argv);
 		nw_fd = write(file_to, buff, nchar_read);
 		if (nw_fd == -1)
 			display_error_message(0, -1, argv);
 	}
-
+	
 	err_cls = close(file_from);
 	if (err_cls == -1)
 	{
