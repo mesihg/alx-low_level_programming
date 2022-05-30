@@ -12,7 +12,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 int fd;
 size_t w_fd, r_fd;
-char buf;
+char *buf;
 if (filename == NULL)
 {
 return (0);
@@ -22,13 +22,18 @@ if (fd == -1)
 {
 return (0);
 }
-
-r_fd = read(fd, &buf, letters);
+buf = malloc(letters);
+if (buff == NULL)
+{
+return (0);
+}
+r_fd = read(fd, buf, letters);
 if (r_fd == -1)
 {
 return (0);
 }
-w_fd = write(STDOUT_FILENO, &buf, r_fd);
+w_fd = write(STDOUT_FILENO, buf, r_fd);
 close(fd);
+free(buf);
 return (w_fd);
 }
