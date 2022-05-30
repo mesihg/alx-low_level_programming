@@ -36,7 +36,7 @@ void display_error_message(int file_from, int file_to, char *arg[])
 
 int main(int argc, char *argv[])
 {
-	int file_from, file_to, er_cls;
+    int file_from, file_to, err_fd;
 	ssize_t nchar_read, nw_fd;
 	char buff[1024];
 
@@ -60,15 +60,16 @@ int main(int argc, char *argv[])
 		if (nw_fd == -1)
 			display_error_message(0, -1, argv);
 	}
-	err_cls = close(file_from);
-	if (err_cls == -1)
+
+	err_fd = close(file_from);
+	if (err_fd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
 		exit(100);
 	}
 
-	err_cls = close(file_to);
-	if (err_cls == -1)
+	err_fd = close(file_to);
+	if (err_fd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
 		exit(100);
