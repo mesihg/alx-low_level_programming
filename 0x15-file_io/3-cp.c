@@ -20,11 +20,10 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	
 	if (file_to == -1)
         {
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-                exit(99);
+          dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+          exit(99);
         }
 	nchar_read = 1024;
 	while (nchar_read == 1024)
