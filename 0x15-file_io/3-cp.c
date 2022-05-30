@@ -59,18 +59,18 @@ int main(int argc, char *argv[])
 		if (nw_fd == -1)
 			display_error_message(0, -1, argv);
 	}
-	
 	err_cls = close(file_from);
 	if (err_cls == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
 		exit(100);
 	}
+
 	err_cls = close(file_to);
-        if (err_cls == -1)
-        {
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to);
-                exit(100);
-        }
+	if (err_cls == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
+		exit(100);
+	}
 	return (0);
 }
