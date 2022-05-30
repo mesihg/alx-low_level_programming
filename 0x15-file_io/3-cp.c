@@ -1,9 +1,15 @@
 #include "main.h"
 #include <stdio.h>
 
+
 /**
-* display_error_message - prints error message to the stderr screen
-*/
+ * display_error_message - prints error message to the stderr screen
+ * @file_from: input file fd one
+ * @file_to: input file fd two
+ * @arg: list of arguments
+ *
+ * Return: nothing is returned
+ */
 
 void display_error_message(int file_from, int file_to, char *arg[])
 {
@@ -19,6 +25,16 @@ void display_error_message(int file_from, int file_to, char *arg[])
         }
 	
 }
+
+
+/**
+ * main - entry point for programs
+ * @argc: number of arguments
+ * @argv: list of arguments
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(int argc, char *argv[])
 {
 	int file_from, file_to, nchar_read, nw_fd, er_cls;
