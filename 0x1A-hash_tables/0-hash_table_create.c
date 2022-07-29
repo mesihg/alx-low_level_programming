@@ -3,13 +3,17 @@
 /**
  * hash_table_create - create a hash table
  * @size: size of the array
+ *
  * Return: newly created hash table
  */
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	unsigned int i;
-	hash_table_t *h_table = malloc(sizeof(hash_table_t));
+	hash_table_t *h_table;
+	unsigned long int i;
+
+
+	h_table = malloc(sizeof(hash_table_t));
 
 	if (h_table == NULL)
 		return (NULL);
