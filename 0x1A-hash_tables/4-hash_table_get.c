@@ -26,5 +26,8 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		node = node->next;
 	}
 
+	if (node == NULL)
+		return (NULL);
+
 	return (node->value);
 }
