@@ -32,8 +32,7 @@ void hash_table_print(const hash_table_t *ht)
 					printf(", ");
 			}
 			comma_sep = 1;
-
-		 }
+		}
 	}
 	printf("}\n");
 
