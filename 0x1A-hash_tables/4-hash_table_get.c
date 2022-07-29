@@ -20,7 +20,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	hash_node_t *node = ht->array[index];
 
 	while (node != NULL &&
-		strcmp(ht->array[index]->key, key) == 0)
+		strcmp(ht->array[index]->key, key) != 0)
 	{
 		node = node->next;
 	}
