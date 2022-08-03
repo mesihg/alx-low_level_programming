@@ -39,6 +39,7 @@ shash_table_t *shash_table_create(unsigned long int size)
  * @ht: pointer to the sorted hash table
  * @key: key of the element to be added
  * @value: value of the element to be added
+ *
  * Return: 1 if it succeeded 0 otherwise
  */
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
@@ -119,6 +120,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
  * shash_table_get - retrieves a value associated with a key
  * @ht: pointer to the sorted hash table
  * @key: the key used for searching
+ *
  * Return: value associated with the key NULL otherwise
  */
 char *shash_table_get(const shash_table_t *ht, const char *key)
@@ -143,7 +145,6 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 /**
  * shash_table_print - prints a sorted hash table
  * @ht: pointer to the sorted hash table
- * Return: void
  */
 void shash_table_print(const shash_table_t *ht)
 {
@@ -167,7 +168,6 @@ void shash_table_print(const shash_table_t *ht)
 /**
  * shash_table_print_rev - print a sorted hash table in reverse order
  * @ht: pointer to a sorted hash table
- * Return: void
  */
 void shash_table_print_rev(const shash_table_t *ht)
 {
@@ -191,7 +191,6 @@ void shash_table_print_rev(const shash_table_t *ht)
 /**
  * shash_table_delete - deletes a sorted hash table
  * @ht: pointer to a sorted hash table
- * Return: void
  */
 void shash_table_delete(shash_table_t *ht)
 {
